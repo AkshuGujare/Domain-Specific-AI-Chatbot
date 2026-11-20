@@ -1,9 +1,9 @@
-import streamlit as st
 from groq import Groq
+import streamlit as st
 import os
 # Initialize the Groq client
-GROQ_API_KEY = "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"
-client = Groq(api_key=st.secrets[GROQ_API_KEY])
+GROQ_API_KEY = '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'
+client = Groq(api_key=GROQ_API_KEY)
 MODEL="openai/gpt-oss-120b"
 
 def get_groq_response(question):
